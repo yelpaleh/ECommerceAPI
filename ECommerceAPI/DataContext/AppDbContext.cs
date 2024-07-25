@@ -6,6 +6,7 @@ namespace ECommerceAPI.DataContext
     public class AppDbContext:DbContext
     {
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Category> Category { get; set; }
         protected readonly IConfiguration Configuration;
         public AppDbContext(IConfiguration configuration)
         {
